@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project -->
+<!DOCTYPE JMdict [
+	<!ENTITY n "noun (common) (futsuumeishi)">
+	<!ENTITY ok "out-dated or obsolete kana usage">
+	<!ENTITY vi "intransitive verb">
+	<!ENTITY vs "noun or participle which takes the aux. verb suru">
+	<!ENTITY vt "transitive verb">
+]>
+<JMdict>
+	<entry>
+		<ent_seq>1202880</ent_seq>
+		<k_ele>
+			<keb>開発</keb>
+			<ke_pri>ichi1</ke_pri>
+			<ke_pri>news1</ke_pri>
+			<ke_pri>nf01</ke_pri>
+		</k_ele>
+		<r_ele>
+			<reb>かいはつ</reb>
+			<re_pri>ichi1</re_pri>
+			<re_pri>news1</re_pri>
+			<re_pri>nf01</re_pri>
+		</r_ele>
+		<r_ele>
+			<reb>かいほつ</reb>
+			<re_inf>&ok;</re_inf>
+		</r_ele>
+		<sense>
+			<pos>&n;</pos>
+			<pos>&vs;</pos>
+			<pos>&vt;</pos>
+			<gloss>development</gloss>
+			<gloss>exploitation (of resources)</gloss>
+		</sense>
+	</entry>
+	<entry>
+		<ent_seq>1477170</ent_seq>
+		<k_ele>
+			<keb>発音</keb>
+			<ke_pri>ichi1</ke_pri>
+			<ke_pri>news1</ke_pri>
+			<ke_pri>nf17</ke_pri>
+		</k_ele>
+		<r_ele>
+			<reb>はつおん</reb>
+			<re_pri>ichi1</re_pri>
+			<re_pri>news1</re_pri>
+			<re_pri>nf17</re_pri>
+		</r_ele>
+		<sense>
+			<pos>&n;</pos>
+			<pos>&vs;</pos>
+			<pos>&vt;</pos>
+			<gloss>pronunciation</gloss>
+		</sense>
+		<sense>
+			<pos>&n;</pos>
+			<gloss>producing a sound</gloss>
+			<gloss>sound production</gloss>
+		</sense>
+	</entry>
+	<entry>
+		<ent_seq>1477350</ent_seq>
+		<k_ele>
+			<keb>発言</keb>
+			<ke_pri>ichi1</ke_pri>
+			<ke_pri>news1</ke_pri>
+			<ke_pri>nf01</ke_pri>
+		</k_ele>
+		<r_ele>
+			<reb>はつげん</reb>
+			<re_pri>ichi1</re_pri>
+			<re_pri>news1</re_pri>
+			<re_pri>nf01</re_pri>
+		</r_ele>
+		<sense>
+			<pos>&n;</pos>
+			<pos>&vs;</pos>
+			<pos>&vt;</pos>
+			<pos>&vi;</pos>
+			<gloss>statement</gloss>
+			<gloss>remark</gloss>
+			<gloss>observation</gloss>
+			<gloss>utterance</gloss>
+			<gloss>speech</gloss>
+			<gloss>proposal</gloss>
+		</sense>
+	</entry>
+</JMdict>

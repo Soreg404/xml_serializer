@@ -1,0 +1,7 @@
+SHELL=cmd
+
+bin\test.exe: test.cpp xml_serializer.hpp
+	g++ test.cpp -o $@ -I $(CSDK) -std=c++17
+
+run: bin\test.exe
+	cd test & ..\$<
