@@ -1,4 +1,5 @@
 #define XML_SERIALIZER_IMPLEMENTATION
+#define XML_SERIALIZER_DEBUG
 #include "xml_serializer.hpp"
 //
 
@@ -8,8 +9,10 @@
 #include <rapidXML.hpp>
 #include <vector>
 
+#ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
+#endif
 
 namespace fs = std::filesystem;
 
@@ -24,9 +27,36 @@ std::vector<char> load_file(fs::path path) {
 	return ret;
 }
 
+/* *INDENT-OFF* */
+/* clang-format off */
+XMLSerializationLevel test_serialization = {{
+	{"JMdict", {{
+		{"entry", {{
+			{"ent_seq", {{}, [](auto v) {
+				std::cout << std::stoll(v->value()) << "\n";
+			}}},
+			{"k_ele", {{
+				{"keb", {{}, [](auto v){
+					std::cout << "kanji element: " << v->value() << "\n";
+				}}}
+			}}},
+			{"r_ele", {{
+				{"reb", {{}, [](auto v){
+					std::cout << "reading: " << v->value() << "\n";
+				}}}
+			}}}
+		}}}
+	}}}
+}};
+/* clang-format on */
+/* *INDENT-ON* */
+
 int main(int argc, const char *argv[]) {
 	std::cout << fs::current_path() << "\n";
+
+#ifdef _WIN32
 	SetConsoleOutputCP(65001);
+#endif
 
 	rapidxml::xml_document jmdict_doc;
 
@@ -40,7 +70,7 @@ int main(int argc, const char *argv[]) {
 		}
 	}
 
-	parse_node(&jmdict_doc);
+	xml_serialize_node(&jmdict_doc, &test_serialization);
 
 	return 0;
 }
