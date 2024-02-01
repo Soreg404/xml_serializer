@@ -1,9 +1,9 @@
 #pragma once
+#include <rapidXML.hpp>
+//
 #include <cstring>
 #include <iostream>
 #include <map>
-#include <rapidXML.hpp>
-#include <rapidXML_print.hpp>
 #include <string>
 
 #ifdef XML_SERIALIZER_DEBUG

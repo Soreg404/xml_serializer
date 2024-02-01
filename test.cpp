@@ -7,6 +7,7 @@
 #include <fstream>
 #include <iostream>
 #include <rapidXML.hpp>
+#include <rapidXML_print.hpp>
 #include <vector>
 
 #ifdef _WIN32
